@@ -173,6 +173,7 @@ message ResponseCurve {
   repeated ResponseSummary summary = 8;
   repeated double controls = 9;
   repeated double blanks = 10;
+  string source = 11;
 }
 
 message AssayData {
