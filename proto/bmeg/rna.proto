@@ -23,30 +23,6 @@ message GeneExpression {
     string method = 7;
 }
 
-// Cohort is for groups of Biosamples
-message Cohort {
-    string id = 1;
-
-    string name = 2;
-    string location = 3;
-    string description = 4;
-
-    repeated string hasSample = 5;
-    repeated string hasMatrix = 6;
-}
-
-// IndividualCohort is for groups of Individuals
-message IndividualCohort {
-    string id = 1;
-    string type = 2;
-
-    string name = 3;
-    string location = 4;
-    string description = 5;
-
-    repeated string hasMember = 6;
-}
-
 message CohortMatrix {
     string id = 1;
     string method = 2;

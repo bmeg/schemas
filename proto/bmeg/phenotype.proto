@@ -2,46 +2,44 @@ syntax = "proto3";
 
 package bmeg;
 
-import "ga4gh/genotype_phenotype.proto";
-
 /*
 Data Messages related to phenotype associatation
 Some of the relavant messages are part of the GA4GH Genotype To Phenotype schema
 https://github.com/ga4gh/ga4gh-schemas/blob/master/src/main/proto/ga4gh/genotype_phenotype.proto
 */
 
-message Predictor {
-  string id = 1;
+// message Predictor {
+//   string id = 1;
 
-  // OPTIONAL
-  // Specify what the model predicts. This should be an ontology node ID
-  ga4gh.PhenotypeInstance phenotype = 3;
+//   // OPTIONAL
+//   // Specify what the model predicts. This should be an ontology node ID
+//   ga4gh.PhenotypeInstance phenotype = 3;
 
-  // OPTIONAL
-  // Specify what the model predicts. This should be an genotype event
-  string genotype = 4;
+//   // OPTIONAL
+//   // Specify what the model predicts. This should be an genotype event
+//   string genotype = 4;
 
-  // environmental factors, match to ontology terms
-  repeated ga4gh.EnvironmentalContext environmental_contexts = 5;
+//   // environmental factors, match to ontology terms
+//   repeated ga4gh.EnvironmentalContext environmental_contexts = 5;
 
-  //ID of the model that made the prediction
-  string model_id = 6;
+//   //ID of the model that made the prediction
+//   string model_id = 6;
 
-  string description = 7;
+//   string description = 7;
 
-  //Background score data, used to evaluate significance of associations
-  //BioSampleID maps to score
-  map<string, double> background = 8;
-}
+//   //Background score data, used to evaluate significance of associations
+//   //BioSampleID maps to score
+//   map<string, double> background = 8;
+// }
 
-message PredictorAssociation {
-  //ID of predictor
-  string predictor_id = 1;
-  //ID of BioSample
-  string sample_id = 2;
-  //Confidence Value
-  double value = 3;
-}
+// message PredictorAssociation {
+//   //ID of predictor
+//   string predictor_id = 1;
+//   //ID of BioSample
+//   string sample_id = 2;
+//   //Confidence Value
+//   double value = 3;
+// }
 
 /*
 Gene Ontology
