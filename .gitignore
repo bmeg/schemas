@@ -1,2 +1,3 @@
 dist/
 biostream_schemas.egg-info/
+*.pyc
