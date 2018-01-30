@@ -1,0 +1,74 @@
+syntax = "proto3";
+
+package bmeg;
+
+enum ExpressionScale {
+  UNKNOWN = 0;
+  READ_COUNT = 1;
+  TPKM = 2;
+  RPKM = 3;
+  FPKM = 4;
+}
+
+message GeneExpression {
+    string id = 1;
+
+    string source = 2;
+    repeated string alias = 3;
+
+    ExpressionScale scale = 4;
+    // Target: Biosample
+    string biosample_id = 5;
+    map<string, double> expressions = 6;
+    string method = 7;
+}
+
+// Cohort is for groups of Biosamples
+message Cohort {
+    string id = 1;
+
+    string name = 2;
+    string location = 3;
+    string description = 4;
+
+    repeated string hasSample = 5;
+    repeated string hasMatrix = 6;
+}
+
+// IndividualCohort is for groups of Individuals
+message IndividualCohort {
+    string id = 1;
+    string type = 2;
+
+    string name = 3;
+    string location = 4;
+    string description = 5;
+
+    repeated string hasMember = 6;
+}
+
+message CohortMatrix {
+    string id = 1;
+    string method = 2;
+
+    repeated string hasVector = 3;
+    repeated string hasKeyspace = 4;
+}
+
+message Keyspace {
+    string id = 1;
+    string name = 2;
+    repeated string keys = 3;
+}
+
+message MatrixVectorEdge {
+    string in = 1;
+    string out = 2;
+    string rowName = 3;
+}
+
+message MatrixAnalysis {
+    string id = 1;
+    repeated string sourceMatrix = 2;
+    repeated string resultMatrix = 3;
+}
