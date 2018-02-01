@@ -21,7 +21,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_pb=_b('\n\x0e\x62meg/cna.proto\x12\x04\x62meg\">\n\nCNACallSet\x12\n\n\x02id\x18\x01 \x01(\t\x12\x14\n\x0c\x62iosample_id\x18\x02 \x01(\t\x12\x0e\n\x06source\x18\x03 \x01(\t\"\x83\x01\n\nCNASegment\x12\x16\n\x0ereference_name\x18\x01 \x01(\t\x12\r\n\x05start\x18\x02 \x01(\x03\x12\x0b\n\x03\x65nd\x18\x03 \x01(\x03\x12\r\n\x05value\x18\x04 \x01(\x02\x12\r\n\x05genes\x18\x05 \x03(\t\x12\x13\n\x0b\x63\x61ll_set_id\x18\x06 \x01(\t\x12\x0e\n\x06source\x18\x07 \x01(\tb\x06proto3')
 )
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -102,7 +101,7 @@ _CNASEGMENT = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='value', full_name='bmeg.CNASegment.value', index=3,
       number=4, type=2, cpp_type=6, label=1,
-      has_default_value=False, default_value=0,
+      has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -145,6 +144,7 @@ _CNASEGMENT = _descriptor.Descriptor(
 
 DESCRIPTOR.message_types_by_name['CNACallSet'] = _CNACALLSET
 DESCRIPTOR.message_types_by_name['CNASegment'] = _CNASEGMENT
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 CNACallSet = _reflection.GeneratedProtocolMessageType('CNACallSet', (_message.Message,), dict(
   DESCRIPTOR = _CNACALLSET,
