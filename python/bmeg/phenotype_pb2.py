@@ -13,14 +13,17 @@ from google.protobuf import descriptor_pb2
 _sym_db = _symbol_database.Default()
 
 
+from google.protobuf import struct_pb2 as google_dot_protobuf_dot_struct__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='bmeg/phenotype.proto',
   package='bmeg',
   syntax='proto3',
-  serialized_pb=_b('\n\x14\x62meg/phenotype.proto\x12\x04\x62meg\"\xd8\x01\n\x10GeneOntologyTerm\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x11\n\tnamespace\x18\x03 \x01(\t\x12\x12\n\ndefinition\x18\x04 \x01(\t\x12\x0f\n\x07\x63omment\x18\x05 \x01(\t\x12\x0f\n\x07synonym\x18\x06 \x03(\t\x12\x0c\n\x04is_a\x18\x07 \x03(\t\x12\x0e\n\x06\x61lt_id\x18\x08 \x03(\t\x12\x0e\n\x06subset\x18\t \x03(\t\x12\x0c\n\x04xref\x18\n \x03(\t\x12\x13\n\x0bis_obsolete\x18\x0b \x01(\x08\x12\x10\n\x08\x63onsider\x18\x0c \x03(\t\"o\n\x16GeneOntologyAnnotation\x12\r\n\x05title\x18\x01 \x01(\t\x12\r\n\x05genes\x18\x02 \x03(\t\x12\x11\n\tfunctions\x18\x03 \x03(\t\x12\x10\n\x08\x65vidence\x18\x04 \x03(\t\x12\x12\n\nreferences\x18\x05 \x03(\t\"\xee\x01\n\x08\x43ompound\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0e\n\x06target\x18\x03 \x03(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x03(\t\x12\x10\n\x08synonyms\x18\x05 \x03(\t\x12\x0e\n\x06pubmed\x18\x06 \x03(\t\x12\x0e\n\x06report\x18\x07 \x01(\t\x12\x0e\n\x06status\x18\x08 \x01(\t\x12\x11\n\trationale\x18\t \x01(\t\x12\x0e\n\x06smiles\x18\n \x01(\t\x12\x0e\n\x06\x61ssays\x18\x0b \x03(\t\x12\x0e\n\x06source\x18\x0c \x03(\t\x12\x0c\n\x04sids\x18\r \x03(\t\x12\x10\n\x08\x63hebi_id\x18\x0e \x01(\t\"\x90\x01\n\x05\x41ssay\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0b\n\x03sid\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x10\n\x08\x63\x65llline\x18\x04 \x01(\t\x12\x0e\n\x06pubmed\x18\x05 \x03(\t\x12)\n\x0c\x64rugresponse\x18\x06 \x03(\x0b\x32\x13.bmeg.ResponseCurve\x12\x13\n\x0bgene_target\x18\x07 \x03(\t\"\x91\x02\n\x0b\x46\x44\x41\x41pproval\x12\x13\n\x0b\x63ompound_id\x18\x01 \x01(\t\x12\x10\n\x08\x61pproved\x18\x02 \x01(\t\x12\x15\n\rapproved_data\x18\x03 \x01(\t\x12\x0f\n\x07\x63ompany\x18\x04 \x01(\t\x12\x0f\n\x07summary\x18\x05 \x01(\t\x12\x1b\n\x13general_information\x18\x06 \x01(\t\x12\x18\n\x10\x63linical_results\x18\x07 \x01(\t\x12\x14\n\x0cside_effects\x18\x08 \x01(\t\x12\x1b\n\x13mechanism_of_action\x18\t \x01(\t\x12\x1e\n\x16\x61\x64\x64itional_information\x18\n \x01(\t\x12\x18\n\x10theraputic_areas\x18\x0b \x01(\t\".\n\x0c\x44oseResponse\x12\x0c\n\x04\x64ose\x18\x01 \x01(\x01\x12\x10\n\x08response\x18\x02 \x01(\x01\"\xdd\x01\n\x0fResponseSummary\x12/\n\x04type\x18\x01 \x01(\x0e\x32!.bmeg.ResponseSummary.SummaryType\x12\r\n\x05value\x18\x02 \x01(\x01\x12\x0c\n\x04unit\x18\x03 \x01(\t\"|\n\x0bSummaryType\x12\x0b\n\x07UNKNOWN\x10\x00\x12\x08\n\x04\x45\x43\x35\x30\x10\x01\x12\x08\n\x04IC50\x10\x02\x12\x08\n\x04\x41\x43\x35\x30\x10\x03\x12\x08\n\x04LD50\x10\x04\x12\x08\n\x04GR50\x10\x05\x12\x08\n\x04\x41MAX\x10\x06\x12\x07\n\x03\x41UC\x10\x07\x12\x11\n\rACTIVITY_AREA\x10\x08\x12\x08\n\x04RMSE\x10\t\"2\n\x0f\x43ompoundElement\x12\x10\n\x08\x63ompound\x18\x01 \x01(\t\x12\r\n\x05ratio\x18\x03 \x01(\x01\"\xed\x02\n\rResponseCurve\x12\x0b\n\x03gid\x18\x01 \x01(\t\x12\x10\n\x08\x61ssay_id\x18\x02 \x01(\t\x12\x36\n\x0cresponseType\x18\x03 \x01(\x0e\x32 .bmeg.ResponseCurve.ResponseType\x12\"\n\x06values\x18\x04 \x03(\x0b\x32\x12.bmeg.DoseResponse\x12\x16\n\x0egrowthStandard\x18\x05 \x01(\x01\x12(\n\tcompounds\x18\x06 \x03(\x0b\x32\x15.bmeg.CompoundElement\x12\x0e\n\x06sample\x18\x07 \x01(\t\x12&\n\x07summary\x18\x08 \x03(\x0b\x32\x15.bmeg.ResponseSummary\x12\x10\n\x08\x63ontrols\x18\t \x03(\x01\x12\x0e\n\x06\x62lanks\x18\n \x03(\x01\x12\x0e\n\x06source\x18\x0b \x01(\t\"5\n\x0cResponseType\x12\x0b\n\x07UNKNOWN\x10\x00\x12\n\n\x06GROWTH\x10\x01\x12\x0c\n\x08\x41\x43TIVITY\x10\x02\"\x82\x03\n\tAssayData\x12\x10\n\x08\x61ssay_id\x18\x01 \x01(\t\x12\x13\n\x0b\x63ompound_id\x18\x02 \x01(\t\x12\x0e\n\x06\x61\x63tive\x18\x03 \x01(\x08\x12\x0f\n\x07\x63omment\x18\x04 \x01(\t\x12\x32\n\nfloat_vals\x18\x05 \x03(\x0b\x32\x1e.bmeg.AssayData.FloatValsEntry\x12\x34\n\x0bstring_vals\x18\x06 \x03(\x0b\x32\x1f.bmeg.AssayData.StringValsEntry\x12.\n\x08int_vals\x18\x07 \x03(\x0b\x32\x1c.bmeg.AssayData.IntValsEntry\x1a\x30\n\x0e\x46loatValsEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\x01:\x02\x38\x01\x1a\x31\n\x0fStringValsEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01\x1a.\n\x0cIntValsEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\x05:\x02\x38\x01\x62\x06proto3')
-)
+  serialized_pb=_b('\n\x14\x62meg/phenotype.proto\x12\x04\x62meg\x1a\x1cgoogle/protobuf/struct.proto\"\xd8\x01\n\x10GeneOntologyTerm\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x11\n\tnamespace\x18\x03 \x01(\t\x12\x12\n\ndefinition\x18\x04 \x01(\t\x12\x0f\n\x07\x63omment\x18\x05 \x01(\t\x12\x0f\n\x07synonym\x18\x06 \x03(\t\x12\x0c\n\x04is_a\x18\x07 \x03(\t\x12\x0e\n\x06\x61lt_id\x18\x08 \x03(\t\x12\x0e\n\x06subset\x18\t \x03(\t\x12\x0c\n\x04xref\x18\n \x03(\t\x12\x13\n\x0bis_obsolete\x18\x0b \x01(\x08\x12\x10\n\x08\x63onsider\x18\x0c \x03(\t\"o\n\x16GeneOntologyAnnotation\x12\r\n\x05title\x18\x01 \x01(\t\x12\r\n\x05genes\x18\x02 \x03(\t\x12\x11\n\tfunctions\x18\x03 \x03(\t\x12\x10\n\x08\x65vidence\x18\x04 \x03(\t\x12\x12\n\nreferences\x18\x05 \x03(\t\"\xee\x01\n\x08\x43ompound\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0e\n\x06target\x18\x03 \x03(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x03(\t\x12\x10\n\x08synonyms\x18\x05 \x03(\t\x12\x0e\n\x06pubmed\x18\x06 \x03(\t\x12\x0e\n\x06report\x18\x07 \x01(\t\x12\x0e\n\x06status\x18\x08 \x01(\t\x12\x11\n\trationale\x18\t \x01(\t\x12\x0e\n\x06smiles\x18\n \x01(\t\x12\x0e\n\x06\x61ssays\x18\x0b \x03(\t\x12\x0e\n\x06source\x18\x0c \x03(\t\x12\x0c\n\x04sids\x18\r \x03(\t\x12\x10\n\x08\x63hebi_id\x18\x0e \x01(\t\"\x90\x01\n\x05\x41ssay\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0b\n\x03sid\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x10\n\x08\x63\x65llline\x18\x04 \x01(\t\x12\x0e\n\x06pubmed\x18\x05 \x03(\t\x12)\n\x0c\x64rugresponse\x18\x06 \x03(\x0b\x32\x13.bmeg.ResponseCurve\x12\x13\n\x0bgene_target\x18\x07 \x03(\t\"\x91\x02\n\x0b\x46\x44\x41\x41pproval\x12\x13\n\x0b\x63ompound_id\x18\x01 \x01(\t\x12\x10\n\x08\x61pproved\x18\x02 \x01(\t\x12\x15\n\rapproved_data\x18\x03 \x01(\t\x12\x0f\n\x07\x63ompany\x18\x04 \x01(\t\x12\x0f\n\x07summary\x18\x05 \x01(\t\x12\x1b\n\x13general_information\x18\x06 \x01(\t\x12\x18\n\x10\x63linical_results\x18\x07 \x01(\t\x12\x14\n\x0cside_effects\x18\x08 \x01(\t\x12\x1b\n\x13mechanism_of_action\x18\t \x01(\t\x12\x1e\n\x16\x61\x64\x64itional_information\x18\n \x01(\t\x12\x18\n\x10theraputic_areas\x18\x0b \x01(\t\".\n\x0c\x44oseResponse\x12\x0c\n\x04\x64ose\x18\x01 \x01(\x01\x12\x10\n\x08response\x18\x02 \x01(\x01\"\xdd\x01\n\x0fResponseSummary\x12/\n\x04type\x18\x01 \x01(\x0e\x32!.bmeg.ResponseSummary.SummaryType\x12\r\n\x05value\x18\x02 \x01(\x01\x12\x0c\n\x04unit\x18\x03 \x01(\t\"|\n\x0bSummaryType\x12\x0b\n\x07UNKNOWN\x10\x00\x12\x08\n\x04\x45\x43\x35\x30\x10\x01\x12\x08\n\x04IC50\x10\x02\x12\x08\n\x04\x41\x43\x35\x30\x10\x03\x12\x08\n\x04LD50\x10\x04\x12\x08\n\x04GR50\x10\x05\x12\x08\n\x04\x41MAX\x10\x06\x12\x07\n\x03\x41UC\x10\x07\x12\x11\n\rACTIVITY_AREA\x10\x08\x12\x08\n\x04RMSE\x10\t\"2\n\x0f\x43ompoundElement\x12\x10\n\x08\x63ompound\x18\x01 \x01(\t\x12\r\n\x05ratio\x18\x03 \x01(\x01\"\xed\x02\n\rResponseCurve\x12\x0b\n\x03gid\x18\x01 \x01(\t\x12\x10\n\x08\x61ssay_id\x18\x02 \x01(\t\x12\x36\n\x0cresponseType\x18\x03 \x01(\x0e\x32 .bmeg.ResponseCurve.ResponseType\x12\"\n\x06values\x18\x04 \x03(\x0b\x32\x12.bmeg.DoseResponse\x12\x16\n\x0egrowthStandard\x18\x05 \x01(\x01\x12(\n\tcompounds\x18\x06 \x03(\x0b\x32\x15.bmeg.CompoundElement\x12\x0e\n\x06sample\x18\x07 \x01(\t\x12&\n\x07summary\x18\x08 \x03(\x0b\x32\x15.bmeg.ResponseSummary\x12\x10\n\x08\x63ontrols\x18\t \x03(\x01\x12\x0e\n\x06\x62lanks\x18\n \x03(\x01\x12\x0e\n\x06source\x18\x0b \x01(\t\"5\n\x0cResponseType\x12\x0b\n\x07UNKNOWN\x10\x00\x12\n\n\x06GROWTH\x10\x01\x12\x0c\n\x08\x41\x43TIVITY\x10\x02\"\x82\x03\n\tAssayData\x12\x10\n\x08\x61ssay_id\x18\x01 \x01(\t\x12\x13\n\x0b\x63ompound_id\x18\x02 \x01(\t\x12\x0e\n\x06\x61\x63tive\x18\x03 \x01(\x08\x12\x0f\n\x07\x63omment\x18\x04 \x01(\t\x12\x32\n\nfloat_vals\x18\x05 \x03(\x0b\x32\x1e.bmeg.AssayData.FloatValsEntry\x12\x34\n\x0bstring_vals\x18\x06 \x03(\x0b\x32\x1f.bmeg.AssayData.StringValsEntry\x12.\n\x08int_vals\x18\x07 \x03(\x0b\x32\x1c.bmeg.AssayData.IntValsEntry\x1a\x30\n\x0e\x46loatValsEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\x01:\x02\x38\x01\x1a\x31\n\x0fStringValsEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01\x1a.\n\x0cIntValsEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\x05:\x02\x38\x01\"\x1c\n\x08\x45vidence\x12\x10\n\x08\x65vidence\x18\x01 \x01(\t\"\x92\x02\n\x0eG2PAssociation\x12\r\n\x05genes\x18\x01 \x03(\t\x12\x14\n\x0c\x65nvironments\x18\x02 \x03(\t\x12\x12\n\nphenotypes\x18\x03 \x03(\t\x12\x10\n\x08\x66\x65\x61tures\x18\x04 \x03(\t\x12\x14\n\x0cpublications\x18\x05 \x03(\t\x12 \n\x08\x65vidence\x18\x07 \x03(\x0b\x32\x0e.bmeg.Evidence\x12\x13\n\x0b\x64\x65scription\x18\x06 \x01(\t\x12\x16\n\x0e\x65vidence_label\x18\x08 \x01(\t\x12\x15\n\rresponse_type\x18\n \x01(\t\x12)\n\x08original\x18\t \x01(\x0b\x32\x17.google.protobuf.Struct\x12\x0e\n\x06source\x18\x0b \x01(\tb\x06proto3')
+  ,
+  dependencies=[google_dot_protobuf_dot_struct__pb2.DESCRIPTOR,])
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -73,8 +76,8 @@ _RESPONSESUMMARY_SUMMARYTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=1172,
-  serialized_end=1296,
+  serialized_start=1202,
+  serialized_end=1326,
 )
 _sym_db.RegisterEnumDescriptor(_RESPONSESUMMARY_SUMMARYTYPE)
 
@@ -99,8 +102,8 @@ _RESPONSECURVE_RESPONSETYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=1663,
-  serialized_end=1716,
+  serialized_start=1693,
+  serialized_end=1746,
 )
 _sym_db.RegisterEnumDescriptor(_RESPONSECURVE_RESPONSETYPE)
 
@@ -208,8 +211,8 @@ _GENEONTOLOGYTERM = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=31,
-  serialized_end=247,
+  serialized_start=61,
+  serialized_end=277,
 )
 
 
@@ -267,8 +270,8 @@ _GENEONTOLOGYANNOTATION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=249,
-  serialized_end=360,
+  serialized_start=279,
+  serialized_end=390,
 )
 
 
@@ -389,8 +392,8 @@ _COMPOUND = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=363,
-  serialized_end=601,
+  serialized_start=393,
+  serialized_end=631,
 )
 
 
@@ -462,8 +465,8 @@ _ASSAY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=604,
-  serialized_end=748,
+  serialized_start=634,
+  serialized_end=778,
 )
 
 
@@ -563,8 +566,8 @@ _FDAAPPROVAL = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=751,
-  serialized_end=1024,
+  serialized_start=781,
+  serialized_end=1054,
 )
 
 
@@ -578,14 +581,14 @@ _DOSERESPONSE = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='dose', full_name='bmeg.DoseResponse.dose', index=0,
       number=1, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='response', full_name='bmeg.DoseResponse.response', index=1,
       number=2, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -601,8 +604,8 @@ _DOSERESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1026,
-  serialized_end=1072,
+  serialized_start=1056,
+  serialized_end=1102,
 )
 
 
@@ -623,7 +626,7 @@ _RESPONSESUMMARY = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='value', full_name='bmeg.ResponseSummary.value', index=1,
       number=2, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -647,8 +650,8 @@ _RESPONSESUMMARY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1075,
-  serialized_end=1296,
+  serialized_start=1105,
+  serialized_end=1326,
 )
 
 
@@ -669,7 +672,7 @@ _COMPOUNDELEMENT = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='ratio', full_name='bmeg.CompoundElement.ratio', index=1,
       number=3, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -685,8 +688,8 @@ _COMPOUNDELEMENT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1298,
-  serialized_end=1348,
+  serialized_start=1328,
+  serialized_end=1378,
 )
 
 
@@ -728,7 +731,7 @@ _RESPONSECURVE = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='growthStandard', full_name='bmeg.ResponseCurve.growthStandard', index=4,
       number=5, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -787,8 +790,8 @@ _RESPONSECURVE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1351,
-  serialized_end=1716,
+  serialized_start=1381,
+  serialized_end=1746,
 )
 
 
@@ -809,7 +812,7 @@ _ASSAYDATA_FLOATVALSENTRY = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='value', full_name='bmeg.AssayData.FloatValsEntry.value', index=1,
       number=2, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -825,8 +828,8 @@ _ASSAYDATA_FLOATVALSENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1958,
-  serialized_end=2006,
+  serialized_start=1988,
+  serialized_end=2036,
 )
 
 _ASSAYDATA_STRINGVALSENTRY = _descriptor.Descriptor(
@@ -862,8 +865,8 @@ _ASSAYDATA_STRINGVALSENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2008,
-  serialized_end=2057,
+  serialized_start=2038,
+  serialized_end=2087,
 )
 
 _ASSAYDATA_INTVALSENTRY = _descriptor.Descriptor(
@@ -899,8 +902,8 @@ _ASSAYDATA_INTVALSENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2059,
-  serialized_end=2105,
+  serialized_start=2089,
+  serialized_end=2135,
 )
 
 _ASSAYDATA = _descriptor.Descriptor(
@@ -971,8 +974,140 @@ _ASSAYDATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1719,
-  serialized_end=2105,
+  serialized_start=1749,
+  serialized_end=2135,
+)
+
+
+_EVIDENCE = _descriptor.Descriptor(
+  name='Evidence',
+  full_name='bmeg.Evidence',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='evidence', full_name='bmeg.Evidence.evidence', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=2137,
+  serialized_end=2165,
+)
+
+
+_G2PASSOCIATION = _descriptor.Descriptor(
+  name='G2PAssociation',
+  full_name='bmeg.G2PAssociation',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='genes', full_name='bmeg.G2PAssociation.genes', index=0,
+      number=1, type=9, cpp_type=9, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='environments', full_name='bmeg.G2PAssociation.environments', index=1,
+      number=2, type=9, cpp_type=9, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='phenotypes', full_name='bmeg.G2PAssociation.phenotypes', index=2,
+      number=3, type=9, cpp_type=9, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='features', full_name='bmeg.G2PAssociation.features', index=3,
+      number=4, type=9, cpp_type=9, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='publications', full_name='bmeg.G2PAssociation.publications', index=4,
+      number=5, type=9, cpp_type=9, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='evidence', full_name='bmeg.G2PAssociation.evidence', index=5,
+      number=7, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='description', full_name='bmeg.G2PAssociation.description', index=6,
+      number=6, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='evidence_label', full_name='bmeg.G2PAssociation.evidence_label', index=7,
+      number=8, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='response_type', full_name='bmeg.G2PAssociation.response_type', index=8,
+      number=10, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='original', full_name='bmeg.G2PAssociation.original', index=9,
+      number=9, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='source', full_name='bmeg.G2PAssociation.source', index=10,
+      number=11, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=2168,
+  serialized_end=2442,
 )
 
 _ASSAY.fields_by_name['drugresponse'].message_type = _RESPONSECURVE
@@ -989,6 +1124,8 @@ _ASSAYDATA_INTVALSENTRY.containing_type = _ASSAYDATA
 _ASSAYDATA.fields_by_name['float_vals'].message_type = _ASSAYDATA_FLOATVALSENTRY
 _ASSAYDATA.fields_by_name['string_vals'].message_type = _ASSAYDATA_STRINGVALSENTRY
 _ASSAYDATA.fields_by_name['int_vals'].message_type = _ASSAYDATA_INTVALSENTRY
+_G2PASSOCIATION.fields_by_name['evidence'].message_type = _EVIDENCE
+_G2PASSOCIATION.fields_by_name['original'].message_type = google_dot_protobuf_dot_struct__pb2._STRUCT
 DESCRIPTOR.message_types_by_name['GeneOntologyTerm'] = _GENEONTOLOGYTERM
 DESCRIPTOR.message_types_by_name['GeneOntologyAnnotation'] = _GENEONTOLOGYANNOTATION
 DESCRIPTOR.message_types_by_name['Compound'] = _COMPOUND
@@ -999,7 +1136,8 @@ DESCRIPTOR.message_types_by_name['ResponseSummary'] = _RESPONSESUMMARY
 DESCRIPTOR.message_types_by_name['CompoundElement'] = _COMPOUNDELEMENT
 DESCRIPTOR.message_types_by_name['ResponseCurve'] = _RESPONSECURVE
 DESCRIPTOR.message_types_by_name['AssayData'] = _ASSAYDATA
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+DESCRIPTOR.message_types_by_name['Evidence'] = _EVIDENCE
+DESCRIPTOR.message_types_by_name['G2PAssociation'] = _G2PASSOCIATION
 
 GeneOntologyTerm = _reflection.GeneratedProtocolMessageType('GeneOntologyTerm', (_message.Message,), dict(
   DESCRIPTOR = _GENEONTOLOGYTERM,
@@ -1094,6 +1232,20 @@ _sym_db.RegisterMessage(AssayData)
 _sym_db.RegisterMessage(AssayData.FloatValsEntry)
 _sym_db.RegisterMessage(AssayData.StringValsEntry)
 _sym_db.RegisterMessage(AssayData.IntValsEntry)
+
+Evidence = _reflection.GeneratedProtocolMessageType('Evidence', (_message.Message,), dict(
+  DESCRIPTOR = _EVIDENCE,
+  __module__ = 'bmeg.phenotype_pb2'
+  # @@protoc_insertion_point(class_scope:bmeg.Evidence)
+  ))
+_sym_db.RegisterMessage(Evidence)
+
+G2PAssociation = _reflection.GeneratedProtocolMessageType('G2PAssociation', (_message.Message,), dict(
+  DESCRIPTOR = _G2PASSOCIATION,
+  __module__ = 'bmeg.phenotype_pb2'
+  # @@protoc_insertion_point(class_scope:bmeg.G2PAssociation)
+  ))
+_sym_db.RegisterMessage(G2PAssociation)
 
 
 _ASSAYDATA_FLOATVALSENTRY.has_options = True

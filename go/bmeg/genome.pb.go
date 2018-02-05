@@ -92,6 +92,7 @@ func (m *Position) GetStrand() string {
 // An example might be a gene or a protein.
 // For example, a position X might corresponds to gene/Feature TP53.
 type Gene struct {
+	// ensembl id
 	Id          string `protobuf:"bytes,1,opt,name=id" json:"id,omitempty"`
 	Symbol      string `protobuf:"bytes,2,opt,name=symbol" json:"symbol,omitempty"`
 	Description string `protobuf:"bytes,3,opt,name=description" json:"description,omitempty"`

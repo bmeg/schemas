@@ -39,6 +39,7 @@ message Position {
 // An example might be a gene or a protein.
 // For example, a position X might corresponds to gene/Feature TP53.
 message Gene {
+    // ensembl id
     string id = 1;
 
     string symbol = 2;

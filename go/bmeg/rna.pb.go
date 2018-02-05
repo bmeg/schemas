@@ -38,6 +38,8 @@ It has these top-level messages:
 	CompoundElement
 	ResponseCurve
 	AssayData
+	Evidence
+	G2PAssociation
 	Position
 	Gene
 	Exon

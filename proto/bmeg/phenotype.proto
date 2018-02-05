@@ -2,6 +2,8 @@ syntax = "proto3";
 
 package bmeg;
 
+import "google/protobuf/struct.proto";
+
 /*
 Data Messages related to phenotype associatation
 Some of the relavant messages are part of the GA4GH Genotype To Phenotype schema
@@ -184,4 +186,25 @@ message AssayData {
   map<string,double> float_vals = 5;
   map<string,string> string_vals = 6;
   map<string,int32> int_vals = 7;
+}
+
+message Evidence {
+    // placeholder
+    string evidence = 1;
+}
+
+message G2PAssociation {
+    repeated string genes = 1;
+    repeated string environments = 2;
+    repeated string phenotypes = 3;
+    repeated string features = 4;
+    repeated string publications = 5;
+
+    repeated Evidence evidence = 7;
+
+    string description = 6;
+    string evidence_label = 8;
+    string response_type = 10;
+    google.protobuf.Struct original = 9;
+    string source = 11;
 }
