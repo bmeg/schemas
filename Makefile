@@ -1,6 +1,7 @@
 all: schemas
 
 schemas:
+	go get github.com/golang/protobuf/protoc-gen-go
 	cd proto && \
 	protoc \
 	-I . \
