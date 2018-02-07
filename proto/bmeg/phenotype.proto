@@ -3,6 +3,7 @@ syntax = "proto3";
 package bmeg;
 
 import "google/protobuf/struct.proto";
+import "bmeg/clinical.proto";
 
 /*
 Data Messages related to phenotype associatation
@@ -189,22 +190,60 @@ message AssayData {
 }
 
 message Evidence {
-    // placeholder
-    string evidence = 1;
+    // ECO or OBI is recommended
+    OntologyTerm evidence_type = 1;
+
+    // A textual description of the evidence. This is used to complement the
+    // structured description in the evidence_type field
+    string description = 2;
+
+    // URLs of supporting publications
+    repeated string publications = 3;
+
+    // AMP/ASCO/CAP Guidelines
+    string evidence_label = 4;
+    // description of response
+    string response_type = 5;
+    // oncogenic description
+    string oncogenic = 6;
+    // passed from harvested source
+    string evidence_level = 7;
+    // Additional annotation data.
+    google.protobuf.Struct  info = 9;
+
 }
 
+message Phenotype {
+  // optional id of Phenotype
+  string id = 1;
+  // reference
+  OntologyTerm type = 2;
+  // text
+  string description = 3;
+  // text description of taxonomy
+  string family = 4;
+}
+
+
 message G2PAssociation {
-    repeated string genes = 1;
-    repeated string environments = 2;
-    repeated string phenotypes = 3;
-    repeated string features = 4;
-    repeated string publications = 5;
-
-    repeated Evidence evidence = 7;
-
+    // optional id of associatation
+    string id = 1;
+    // gene ids
+    repeated string genes = 2;
+    // environment (drug) ids
+    repeated string environments = 3;
+    // phenotype (disease) ids
+    repeated string phenotypes = 4;
+    // feature (variant) ids
+    repeated string features = 5;
+    // A textual description of the evidence. This is used to complement the
+    // structured description in the evidence_type field
     string description = 6;
-    string evidence_label = 8;
-    string response_type = 10;
+    // structured evidence
+    repeated Evidence evidence = 7;
+    // name of source evidence was harvested from
+    string source = 8;
+    // opaque data harvested from source
     google.protobuf.Struct original = 9;
-    string source = 11;
+
 }

@@ -2,6 +2,6 @@ from setuptools import setup
 
 setup(
     name='biostream-schemas',
-    version='0.0.5',
+    version='0.0.6',
     packages=['bmeg']
 )
