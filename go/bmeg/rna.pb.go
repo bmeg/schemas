@@ -39,6 +39,7 @@ It has these top-level messages:
 	ResponseCurve
 	AssayData
 	Evidence
+	Phenotype
 	G2PAssociation
 	Position
 	Gene

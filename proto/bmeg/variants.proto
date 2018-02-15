@@ -241,6 +241,10 @@ message Variant {
     repeated string filters_failed = 16;
 
     string source = 21;
+
+    // The genome build in which the chromosomal reference sequence is referenced.
+    // see http://datamodel.clinicalgenome.org/allele/resource/reference_sequence/
+    string reference_genome = 22;
 }
 
 // A transcript effect record is a set of information describing the effect of
@@ -274,7 +278,7 @@ message TranscriptEffect {
 
     // // Output from prediction packages such as SIFT.
     // repeated AnalysisResult analysis_results = 9;
-  
+
     // A map of additional information about the Transcript Effect.
     // Attributes attributes = 11;
 }
