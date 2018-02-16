@@ -1,0 +1,25 @@
+
+
+syntax = "proto3";
+
+package bmeg;
+
+
+message Intervention {
+  string type = 1;
+  string name = 2;
+}
+
+
+message Trial {
+  string study_id = 1;
+  string title = 2;
+  string short_title = 3;
+  string summary = 4;
+  string start_date = 5;
+  string completion_date = 6;
+  
+  repeated string pubmed = 7;
+  
+  repeated string mesh_terms = 8;
+}
