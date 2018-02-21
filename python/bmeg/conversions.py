@@ -1,5 +1,6 @@
 import json
 import bmeg.hugo_ensembl
+import bmeg.pubchem_table
 
 def build_mapping(inpath, outpath):
     i = open(inpath, 'r')
@@ -19,3 +20,6 @@ def build_mapping(inpath, outpath):
 
 def hugo_ensembl(hugo):
     return bmeg.hugo_ensembl.hugo_ensembl(hugo)
+
+def pubchem(random):
+    return bmeg.pubchem_table.convert(random)
