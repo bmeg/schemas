@@ -84,7 +84,7 @@ _GENEEXPRESSION_EXPRESSIONSENTRY = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='value', full_name='bmeg.GeneExpression.ExpressionsEntry.value', index=1,
       number=2, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
