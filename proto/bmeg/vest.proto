@@ -1,0 +1,25 @@
+
+// vest score
+
+syntax = "proto3";
+
+package bmeg;
+
+message VestScore {
+   string aa_mutation = 1;
+   string alt = 2;
+   string chromosome = 3;
+
+  message GENE {
+     string id = 1;
+     string name = 2;
+  }
+
+   GENE gene = 4;
+   string protein_alt = 5;
+   string protein_ref = 6;
+   string ref = 7;
+   double score = 8;
+   sint64 start = 9;
+   string transcript = 10;
+}
