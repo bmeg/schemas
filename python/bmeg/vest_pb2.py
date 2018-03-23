@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='bmeg/vest.proto',
   package='bmeg',
   syntax='proto3',
-  serialized_pb=_b('\n\x0f\x62meg/vest.proto\x12\x04\x62meg\"\xf0\x01\n\tVestScore\x12\x13\n\x0b\x61\x61_mutation\x18\x01 \x01(\t\x12\x0b\n\x03\x61lt\x18\x02 \x01(\t\x12\x12\n\nchromosome\x18\x03 \x01(\t\x12\"\n\x04gene\x18\x04 \x01(\x0b\x32\x14.bmeg.VestScore.GENE\x12\x13\n\x0bprotein_alt\x18\x05 \x01(\t\x12\x13\n\x0bprotein_ref\x18\x06 \x01(\t\x12\x0b\n\x03ref\x18\x07 \x01(\t\x12\r\n\x05score\x18\x08 \x01(\x01\x12\r\n\x05start\x18\t \x01(\x12\x12\x12\n\ntranscript\x18\n \x01(\t\x1a \n\x04GENE\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\tb\x06proto3')
+  serialized_pb=_b('\n\x0f\x62meg/vest.proto\x12\x04\x62meg\"\xf0\x01\n\tVestScore\x12\x13\n\x0b\x61\x61_mutation\x18\x01 \x01(\t\x12\x0b\n\x03\x61lt\x18\x02 \x01(\t\x12\x12\n\nchromosome\x18\x03 \x01(\t\x12\"\n\x04gene\x18\x04 \x01(\x0b\x32\x14.bmeg.VestScore.Gene\x12\x13\n\x0bprotein_alt\x18\x05 \x01(\t\x12\x13\n\x0bprotein_ref\x18\x06 \x01(\t\x12\x0b\n\x03ref\x18\x07 \x01(\t\x12\r\n\x05score\x18\x08 \x01(\x01\x12\r\n\x05start\x18\t \x01(\x03\x12\x12\n\ntranscript\x18\n \x01(\t\x1a \n\x04Gene\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\tb\x06proto3')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -27,21 +27,21 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 _VESTSCORE_GENE = _descriptor.Descriptor(
-  name='GENE',
-  full_name='bmeg.VestScore.GENE',
+  name='Gene',
+  full_name='bmeg.VestScore.Gene',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='id', full_name='bmeg.VestScore.GENE.id', index=0,
+      name='id', full_name='bmeg.VestScore.Gene.id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='name', full_name='bmeg.VestScore.GENE.name', index=1,
+      name='name', full_name='bmeg.VestScore.Gene.name', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -128,7 +128,7 @@ _VESTSCORE = _descriptor.Descriptor(
       options=None),
     _descriptor.FieldDescriptor(
       name='start', full_name='bmeg.VestScore.start', index=8,
-      number=9, type=18, cpp_type=2, label=1,
+      number=9, type=3, cpp_type=2, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -162,10 +162,10 @@ DESCRIPTOR.message_types_by_name['VestScore'] = _VESTSCORE
 
 VestScore = _reflection.GeneratedProtocolMessageType('VestScore', (_message.Message,), dict(
 
-  GENE = _reflection.GeneratedProtocolMessageType('GENE', (_message.Message,), dict(
+  Gene = _reflection.GeneratedProtocolMessageType('Gene', (_message.Message,), dict(
     DESCRIPTOR = _VESTSCORE_GENE,
     __module__ = 'bmeg.vest_pb2'
-    # @@protoc_insertion_point(class_scope:bmeg.VestScore.GENE)
+    # @@protoc_insertion_point(class_scope:bmeg.VestScore.Gene)
     ))
   ,
   DESCRIPTOR = _VESTSCORE,
@@ -173,7 +173,7 @@ VestScore = _reflection.GeneratedProtocolMessageType('VestScore', (_message.Mess
   # @@protoc_insertion_point(class_scope:bmeg.VestScore)
   ))
 _sym_db.RegisterMessage(VestScore)
-_sym_db.RegisterMessage(VestScore.GENE)
+_sym_db.RegisterMessage(VestScore.Gene)
 
 
 # @@protoc_insertion_point(module_scope)

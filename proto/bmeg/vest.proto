@@ -1,5 +1,6 @@
 
 // vest score
+// see http://karchinlab.org/apps/appVest.html
 
 syntax = "proto3";
 
@@ -10,16 +11,16 @@ message VestScore {
    string alt = 2;
    string chromosome = 3;
 
-  message GENE {
+  message Gene {
      string id = 1;
      string name = 2;
   }
 
-   GENE gene = 4;
+   Gene gene = 4;
    string protein_alt = 5;
    string protein_ref = 6;
    string ref = 7;
    double score = 8;
-   sint64 start = 9;
+   int64 start = 9;
    string transcript = 10;
 }
