@@ -12,6 +12,7 @@ It is generated from these files:
 	bmeg/genome.proto
 	bmeg/variants.proto
 	bmeg/methylation.proto
+	bmeg/protein.proto
 
 It has these top-level messages:
 	GeneExpression
@@ -57,6 +58,7 @@ It has these top-level messages:
 	TranscriptEffect
 	VariantAnnotation
 	MethylationPanel
+	Protein
 */
 package bmeg
 
