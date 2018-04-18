@@ -11,6 +11,7 @@ It is generated from these files:
 	bmeg/phenotype.proto
 	bmeg/genome.proto
 	bmeg/variants.proto
+	bmeg/methylation.proto
 
 It has these top-level messages:
 	GeneExpression
@@ -55,6 +56,7 @@ It has these top-level messages:
 	Variant
 	TranscriptEffect
 	VariantAnnotation
+	MethylationPanel
 */
 package bmeg
 
