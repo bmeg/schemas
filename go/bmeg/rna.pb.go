@@ -61,6 +61,7 @@ It has these top-level messages:
 	MethylationPanel
 	VestScore
 	Protein
+	PFAMFamily
 */
 package bmeg
 
