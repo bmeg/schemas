@@ -14,6 +14,7 @@ It is generated from these files:
 	bmeg/methylation.proto
 	bmeg/vest.proto
 	bmeg/protein.proto
+	bmeg/ml.proto
 
 It has these top-level messages:
 	GeneExpression
@@ -61,6 +62,17 @@ It has these top-level messages:
 	MethylationPanel
 	VestScore
 	Protein
+	ModelPerformance
+	Model
+	MetricSummary
+	ConfusionMatrix
+	CutoffMetrics
+	ModelStructure
+	ModelComponent
+	DecisionTree
+	RandomForestData
+	LinearCoeffData
+	FeatureCoefficient
 */
 package bmeg
 
