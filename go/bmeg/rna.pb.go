@@ -14,6 +14,7 @@ It is generated from these files:
 	bmeg/methylation.proto
 	bmeg/vest.proto
 	bmeg/protein.proto
+	bmeg/nlp.proto
 
 It has these top-level messages:
 	GeneExpression
@@ -61,6 +62,7 @@ It has these top-level messages:
 	MethylationPanel
 	VestScore
 	Protein
+	Pubmed
 */
 package bmeg
 
