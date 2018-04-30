@@ -11,6 +11,7 @@ It is generated from these files:
 	bmeg/phenotype.proto
 	bmeg/genome.proto
 	bmeg/variants.proto
+	bmeg/vest.proto
 	bmeg/protein.proto
 
 It has these top-level messages:
@@ -56,6 +57,7 @@ It has these top-level messages:
 	Variant
 	TranscriptEffect
 	VariantAnnotation
+	VestScore
 	Protein
 */
 package bmeg

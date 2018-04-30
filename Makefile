@@ -19,4 +19,5 @@ schemas:
 	bmeg/phenotype.proto \
 	bmeg/genome.proto \
 	bmeg/variants.proto \
+	bmeg/vest.proto \
 	bmeg/protein.proto
