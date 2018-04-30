@@ -21,7 +21,7 @@ type ModelPerformance struct {
 func (m *ModelPerformance) Reset()                    { *m = ModelPerformance{} }
 func (m *ModelPerformance) String() string            { return proto.CompactTextString(m) }
 func (*ModelPerformance) ProtoMessage()               {}
-func (*ModelPerformance) Descriptor() ([]byte, []int) { return fileDescriptor9, []int{0} }
+func (*ModelPerformance) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{0} }
 
 func (m *ModelPerformance) GetModelId() string {
 	if m != nil {
@@ -53,7 +53,7 @@ type Model struct {
 func (m *Model) Reset()                    { *m = Model{} }
 func (m *Model) String() string            { return proto.CompactTextString(m) }
 func (*Model) ProtoMessage()               {}
-func (*Model) Descriptor() ([]byte, []int) { return fileDescriptor9, []int{1} }
+func (*Model) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{1} }
 
 func (m *Model) GetId() string {
 	if m != nil {
@@ -84,7 +84,7 @@ type MetricSummary struct {
 func (m *MetricSummary) Reset()                    { *m = MetricSummary{} }
 func (m *MetricSummary) String() string            { return proto.CompactTextString(m) }
 func (*MetricSummary) ProtoMessage()               {}
-func (*MetricSummary) Descriptor() ([]byte, []int) { return fileDescriptor9, []int{2} }
+func (*MetricSummary) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{2} }
 
 func (m *MetricSummary) GetType() string {
 	if m != nil {
@@ -110,7 +110,7 @@ type ConfusionMatrix struct {
 func (m *ConfusionMatrix) Reset()                    { *m = ConfusionMatrix{} }
 func (m *ConfusionMatrix) String() string            { return proto.CompactTextString(m) }
 func (*ConfusionMatrix) ProtoMessage()               {}
-func (*ConfusionMatrix) Descriptor() ([]byte, []int) { return fileDescriptor9, []int{3} }
+func (*ConfusionMatrix) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{3} }
 
 func (m *ConfusionMatrix) GetTruePositive() float32 {
 	if m != nil {
@@ -148,7 +148,7 @@ type CutoffMetrics struct {
 func (m *CutoffMetrics) Reset()                    { *m = CutoffMetrics{} }
 func (m *CutoffMetrics) String() string            { return proto.CompactTextString(m) }
 func (*CutoffMetrics) ProtoMessage()               {}
-func (*CutoffMetrics) Descriptor() ([]byte, []int) { return fileDescriptor9, []int{4} }
+func (*CutoffMetrics) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{4} }
 
 func (m *CutoffMetrics) GetValue() float32 {
 	if m != nil {
@@ -171,7 +171,7 @@ type ModelStructure struct {
 func (m *ModelStructure) Reset()                    { *m = ModelStructure{} }
 func (m *ModelStructure) String() string            { return proto.CompactTextString(m) }
 func (*ModelStructure) ProtoMessage()               {}
-func (*ModelStructure) Descriptor() ([]byte, []int) { return fileDescriptor9, []int{5} }
+func (*ModelStructure) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{5} }
 
 func (m *ModelStructure) GetComponents() []*ModelComponent {
 	if m != nil {
@@ -191,7 +191,7 @@ type ModelComponent struct {
 func (m *ModelComponent) Reset()                    { *m = ModelComponent{} }
 func (m *ModelComponent) String() string            { return proto.CompactTextString(m) }
 func (*ModelComponent) ProtoMessage()               {}
-func (*ModelComponent) Descriptor() ([]byte, []int) { return fileDescriptor9, []int{6} }
+func (*ModelComponent) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{6} }
 
 type isModelComponent_Data interface {
 	isModelComponent_Data()
@@ -316,7 +316,7 @@ type DecisionTree struct {
 func (m *DecisionTree) Reset()                    { *m = DecisionTree{} }
 func (m *DecisionTree) String() string            { return proto.CompactTextString(m) }
 func (*DecisionTree) ProtoMessage()               {}
-func (*DecisionTree) Descriptor() ([]byte, []int) { return fileDescriptor9, []int{7} }
+func (*DecisionTree) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{7} }
 
 func (m *DecisionTree) GetNodes() []*DecisionTree_DecisionNode {
 	if m != nil {
@@ -337,7 +337,7 @@ type DecisionTree_DecisionNode struct {
 func (m *DecisionTree_DecisionNode) Reset()                    { *m = DecisionTree_DecisionNode{} }
 func (m *DecisionTree_DecisionNode) String() string            { return proto.CompactTextString(m) }
 func (*DecisionTree_DecisionNode) ProtoMessage()               {}
-func (*DecisionTree_DecisionNode) Descriptor() ([]byte, []int) { return fileDescriptor9, []int{7, 0} }
+func (*DecisionTree_DecisionNode) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{7, 0} }
 
 func (m *DecisionTree_DecisionNode) GetAboveChild() int32 {
 	if m != nil {
@@ -388,7 +388,7 @@ type RandomForestData struct {
 func (m *RandomForestData) Reset()                    { *m = RandomForestData{} }
 func (m *RandomForestData) String() string            { return proto.CompactTextString(m) }
 func (*RandomForestData) ProtoMessage()               {}
-func (*RandomForestData) Descriptor() ([]byte, []int) { return fileDescriptor9, []int{8} }
+func (*RandomForestData) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{8} }
 
 func (m *RandomForestData) GetForest() []*DecisionTree {
 	if m != nil {
@@ -406,7 +406,7 @@ type LinearCoeffData struct {
 func (m *LinearCoeffData) Reset()                    { *m = LinearCoeffData{} }
 func (m *LinearCoeffData) String() string            { return proto.CompactTextString(m) }
 func (*LinearCoeffData) ProtoMessage()               {}
-func (*LinearCoeffData) Descriptor() ([]byte, []int) { return fileDescriptor9, []int{9} }
+func (*LinearCoeffData) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{9} }
 
 func (m *LinearCoeffData) GetIntercept() float32 {
 	if m != nil {
@@ -437,7 +437,7 @@ type FeatureCoefficient struct {
 func (m *FeatureCoefficient) Reset()                    { *m = FeatureCoefficient{} }
 func (m *FeatureCoefficient) String() string            { return proto.CompactTextString(m) }
 func (*FeatureCoefficient) ProtoMessage()               {}
-func (*FeatureCoefficient) Descriptor() ([]byte, []int) { return fileDescriptor9, []int{10} }
+func (*FeatureCoefficient) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{10} }
 
 func (m *FeatureCoefficient) GetFeature() string {
 	if m != nil {
@@ -468,9 +468,9 @@ func init() {
 	proto.RegisterType((*FeatureCoefficient)(nil), "bmeg.FeatureCoefficient")
 }
 
-func init() { proto.RegisterFile("bmeg/ml.proto", fileDescriptor9) }
+func init() { proto.RegisterFile("bmeg/ml.proto", fileDescriptor4) }
 
-var fileDescriptor9 = []byte{
+var fileDescriptor4 = []byte{
 	// 706 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x6c, 0x94, 0xdb, 0x6e, 0xd3, 0x4a,
 	0x14, 0x86, 0xb7, 0x9d, 0x43, 0x9b, 0x95, 0x43, 0xab, 0xd9, 0xdd, 0x5b, 0xa6, 0x20, 0x35, 0x32,
