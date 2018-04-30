@@ -1,5 +1,6 @@
 all: schemas
 
+export GOPATH=$(shell pwd)
 PATH := ${PATH}:${GOPATH}/bin
 export PATH
 
@@ -19,5 +20,6 @@ schemas:
 	bmeg/phenotype.proto \
 	bmeg/genome.proto \
 	bmeg/variants.proto \
+	bmeg/methylation.proto \
 	bmeg/vest.proto \
 	bmeg/protein.proto

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package bmeg;
+
+
+message MethylationPanel {
+    string id = 1;
+    // Target: Biosample
+    string biosample_id = 5;
+    map<string, double> beta_value = 6;
+}

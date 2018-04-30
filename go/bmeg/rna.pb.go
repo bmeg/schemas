@@ -11,6 +11,7 @@ It is generated from these files:
 	bmeg/phenotype.proto
 	bmeg/genome.proto
 	bmeg/variants.proto
+	bmeg/methylation.proto
 	bmeg/vest.proto
 	bmeg/protein.proto
 
@@ -57,6 +58,7 @@ It has these top-level messages:
 	Variant
 	TranscriptEffect
 	VariantAnnotation
+	MethylationPanel
 	VestScore
 	Protein
 */

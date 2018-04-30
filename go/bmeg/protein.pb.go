@@ -26,7 +26,7 @@ type Protein struct {
 func (m *Protein) Reset()                    { *m = Protein{} }
 func (m *Protein) String() string            { return proto.CompactTextString(m) }
 func (*Protein) ProtoMessage()               {}
-func (*Protein) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{0} }
+func (*Protein) Descriptor() ([]byte, []int) { return fileDescriptor8, []int{0} }
 
 func (m *Protein) GetUniprotId() string {
 	if m != nil {
@@ -88,9 +88,9 @@ func init() {
 	proto.RegisterType((*Protein)(nil), "bmeg.Protein")
 }
 
-func init() { proto.RegisterFile("bmeg/protein.proto", fileDescriptor7) }
+func init() { proto.RegisterFile("bmeg/protein.proto", fileDescriptor8) }
 
-var fileDescriptor7 = []byte{
+var fileDescriptor8 = []byte{
 	// 206 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x3c, 0x90, 0xcd, 0x4a, 0xc5, 0x30,
 	0x10, 0x85, 0xa9, 0xad, 0xbd, 0x76, 0x14, 0x7f, 0x66, 0x21, 0xb3, 0x50, 0xa8, 0x6e, 0x74, 0xa3,
