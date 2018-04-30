@@ -25,7 +25,7 @@ type Pubmed struct {
 func (m *Pubmed) Reset()                    { *m = Pubmed{} }
 func (m *Pubmed) String() string            { return proto.CompactTextString(m) }
 func (*Pubmed) ProtoMessage()               {}
-func (*Pubmed) Descriptor() ([]byte, []int) { return fileDescriptor9, []int{0} }
+func (*Pubmed) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{0} }
 
 func (m *Pubmed) GetPmid() string {
 	if m != nil {
@@ -80,9 +80,9 @@ func init() {
 	proto.RegisterType((*Pubmed)(nil), "bmeg.Pubmed")
 }
 
-func init() { proto.RegisterFile("bmeg/nlp.proto", fileDescriptor9) }
+func init() { proto.RegisterFile("bmeg/nlp.proto", fileDescriptor5) }
 
-var fileDescriptor9 = []byte{
+var fileDescriptor5 = []byte{
 	// 166 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x3c, 0x8e, 0x41, 0xca, 0xc2, 0x30,
 	0x10, 0x46, 0xe9, 0xdf, 0x36, 0xbf, 0x9d, 0x85, 0x8b, 0x41, 0x64, 0x70, 0x55, 0x5c, 0x75, 0xa5,

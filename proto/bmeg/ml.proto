@@ -1,0 +1,72 @@
+
+syntax = "proto3";
+
+package bmeg;
+
+message ModelPerformance {
+  string model_id = 1;
+  repeated MetricSummary metrics = 2;
+  repeated CutoffMetrics cutoffs = 3;
+}
+
+message Model {
+  string id = 1;
+  ModelStructure structure = 2;
+  repeated ModelPerformance performance = 3;
+}
+
+message MetricSummary {
+  string type = 1;
+  float  value = 2;
+}
+
+message ConfusionMatrix {
+  float true_positive  = 1;
+  float true_negative  = 2;
+  float false_positive = 3;
+  float false_negative = 4;
+}
+
+message CutoffMetrics {
+  float value = 1;
+  ConfusionMatrix truth = 2;
+}
+
+message ModelStructure {
+  repeated ModelComponent components = 1;
+}
+
+message ModelComponent {
+  float coeff = 1;
+  oneof Data {
+    RandomForestData random_forest = 2;
+    LinearCoeffData  linear_coeff = 3;
+  }
+}
+
+message DecisionTree {
+  message DecisionNode {
+    int32 above_child = 1;
+    int32 below_child = 2;
+    string split_variable = 3;
+    double split_value = 4;
+    bool leaf_node = 5;
+    bool label = 6;
+  }
+  repeated DecisionNode nodes = 1;
+}
+
+message RandomForestData {
+  repeated DecisionTree forest = 1;
+}
+
+message LinearCoeffData {
+  float intercept = 1;
+  float alpha = 2;
+  map<string, double> coeff = 3;
+}
+
+message FeatureCoefficient {
+  string feature = 1;
+  float coeff = 2;
+}

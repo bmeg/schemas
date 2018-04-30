@@ -22,7 +22,7 @@ type MethylationPanel struct {
 func (m *MethylationPanel) Reset()                    { *m = MethylationPanel{} }
 func (m *MethylationPanel) String() string            { return proto.CompactTextString(m) }
 func (*MethylationPanel) ProtoMessage()               {}
-func (*MethylationPanel) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{0} }
+func (*MethylationPanel) Descriptor() ([]byte, []int) { return fileDescriptor3, []int{0} }
 
 func (m *MethylationPanel) GetId() string {
 	if m != nil {
@@ -49,9 +49,9 @@ func init() {
 	proto.RegisterType((*MethylationPanel)(nil), "bmeg.MethylationPanel")
 }
 
-func init() { proto.RegisterFile("bmeg/methylation.proto", fileDescriptor6) }
+func init() { proto.RegisterFile("bmeg/methylation.proto", fileDescriptor3) }
 
-var fileDescriptor6 = []byte{
+var fileDescriptor3 = []byte{
 	// 192 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xe2, 0x12, 0x4b, 0xca, 0x4d, 0x4d,
 	0xd7, 0xcf, 0x4d, 0x2d, 0xc9, 0xa8, 0xcc, 0x49, 0x2c, 0xc9, 0xcc, 0xcf, 0xd3, 0x2b, 0x28, 0xca,

@@ -57,7 +57,7 @@ func (x ResponseSummary_SummaryType) String() string {
 	return proto.EnumName(ResponseSummary_SummaryType_name, int32(x))
 }
 func (ResponseSummary_SummaryType) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor3, []int{6, 0}
+	return fileDescriptor7, []int{6, 0}
 }
 
 type ResponseCurve_ResponseType int32
@@ -83,7 +83,7 @@ func (x ResponseCurve_ResponseType) String() string {
 	return proto.EnumName(ResponseCurve_ResponseType_name, int32(x))
 }
 func (ResponseCurve_ResponseType) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor3, []int{8, 0}
+	return fileDescriptor7, []int{8, 0}
 }
 
 //
@@ -106,7 +106,7 @@ type GeneOntologyTerm struct {
 func (m *GeneOntologyTerm) Reset()                    { *m = GeneOntologyTerm{} }
 func (m *GeneOntologyTerm) String() string            { return proto.CompactTextString(m) }
 func (*GeneOntologyTerm) ProtoMessage()               {}
-func (*GeneOntologyTerm) Descriptor() ([]byte, []int) { return fileDescriptor3, []int{0} }
+func (*GeneOntologyTerm) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{0} }
 
 func (m *GeneOntologyTerm) GetId() string {
 	if m != nil {
@@ -203,7 +203,7 @@ type GeneOntologyAnnotation struct {
 func (m *GeneOntologyAnnotation) Reset()                    { *m = GeneOntologyAnnotation{} }
 func (m *GeneOntologyAnnotation) String() string            { return proto.CompactTextString(m) }
 func (*GeneOntologyAnnotation) ProtoMessage()               {}
-func (*GeneOntologyAnnotation) Descriptor() ([]byte, []int) { return fileDescriptor3, []int{1} }
+func (*GeneOntologyAnnotation) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{1} }
 
 func (m *GeneOntologyAnnotation) GetTitle() string {
 	if m != nil {
@@ -260,7 +260,7 @@ type Compound struct {
 func (m *Compound) Reset()                    { *m = Compound{} }
 func (m *Compound) String() string            { return proto.CompactTextString(m) }
 func (*Compound) ProtoMessage()               {}
-func (*Compound) Descriptor() ([]byte, []int) { return fileDescriptor3, []int{2} }
+func (*Compound) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{2} }
 
 func (m *Compound) GetId() string {
 	if m != nil {
@@ -373,7 +373,7 @@ type Assay struct {
 func (m *Assay) Reset()                    { *m = Assay{} }
 func (m *Assay) String() string            { return proto.CompactTextString(m) }
 func (*Assay) ProtoMessage()               {}
-func (*Assay) Descriptor() ([]byte, []int) { return fileDescriptor3, []int{3} }
+func (*Assay) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{3} }
 
 func (m *Assay) GetId() string {
 	if m != nil {
@@ -441,7 +441,7 @@ type FDAApproval struct {
 func (m *FDAApproval) Reset()                    { *m = FDAApproval{} }
 func (m *FDAApproval) String() string            { return proto.CompactTextString(m) }
 func (*FDAApproval) ProtoMessage()               {}
-func (*FDAApproval) Descriptor() ([]byte, []int) { return fileDescriptor3, []int{4} }
+func (*FDAApproval) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{4} }
 
 func (m *FDAApproval) GetCompoundId() string {
 	if m != nil {
@@ -528,7 +528,7 @@ type DoseResponse struct {
 func (m *DoseResponse) Reset()                    { *m = DoseResponse{} }
 func (m *DoseResponse) String() string            { return proto.CompactTextString(m) }
 func (*DoseResponse) ProtoMessage()               {}
-func (*DoseResponse) Descriptor() ([]byte, []int) { return fileDescriptor3, []int{5} }
+func (*DoseResponse) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{5} }
 
 func (m *DoseResponse) GetDose() float64 {
 	if m != nil {
@@ -553,7 +553,7 @@ type ResponseSummary struct {
 func (m *ResponseSummary) Reset()                    { *m = ResponseSummary{} }
 func (m *ResponseSummary) String() string            { return proto.CompactTextString(m) }
 func (*ResponseSummary) ProtoMessage()               {}
-func (*ResponseSummary) Descriptor() ([]byte, []int) { return fileDescriptor3, []int{6} }
+func (*ResponseSummary) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{6} }
 
 func (m *ResponseSummary) GetType() ResponseSummary_SummaryType {
 	if m != nil {
@@ -584,7 +584,7 @@ type CompoundElement struct {
 func (m *CompoundElement) Reset()                    { *m = CompoundElement{} }
 func (m *CompoundElement) String() string            { return proto.CompactTextString(m) }
 func (*CompoundElement) ProtoMessage()               {}
-func (*CompoundElement) Descriptor() ([]byte, []int) { return fileDescriptor3, []int{7} }
+func (*CompoundElement) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{7} }
 
 func (m *CompoundElement) GetCompound() string {
 	if m != nil {
@@ -617,7 +617,7 @@ type ResponseCurve struct {
 func (m *ResponseCurve) Reset()                    { *m = ResponseCurve{} }
 func (m *ResponseCurve) String() string            { return proto.CompactTextString(m) }
 func (*ResponseCurve) ProtoMessage()               {}
-func (*ResponseCurve) Descriptor() ([]byte, []int) { return fileDescriptor3, []int{8} }
+func (*ResponseCurve) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{8} }
 
 func (m *ResponseCurve) GetGid() string {
 	if m != nil {
@@ -709,7 +709,7 @@ type AssayData struct {
 func (m *AssayData) Reset()                    { *m = AssayData{} }
 func (m *AssayData) String() string            { return proto.CompactTextString(m) }
 func (*AssayData) ProtoMessage()               {}
-func (*AssayData) Descriptor() ([]byte, []int) { return fileDescriptor3, []int{9} }
+func (*AssayData) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{9} }
 
 func (m *AssayData) GetAssayId() string {
 	if m != nil {
@@ -783,7 +783,7 @@ type Evidence struct {
 func (m *Evidence) Reset()                    { *m = Evidence{} }
 func (m *Evidence) String() string            { return proto.CompactTextString(m) }
 func (*Evidence) ProtoMessage()               {}
-func (*Evidence) Descriptor() ([]byte, []int) { return fileDescriptor3, []int{10} }
+func (*Evidence) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{10} }
 
 func (m *Evidence) GetEvidenceType() *OntologyTerm {
 	if m != nil {
@@ -855,7 +855,7 @@ type Phenotype struct {
 func (m *Phenotype) Reset()                    { *m = Phenotype{} }
 func (m *Phenotype) String() string            { return proto.CompactTextString(m) }
 func (*Phenotype) ProtoMessage()               {}
-func (*Phenotype) Descriptor() ([]byte, []int) { return fileDescriptor3, []int{11} }
+func (*Phenotype) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{11} }
 
 func (m *Phenotype) GetId() string {
 	if m != nil {
@@ -910,7 +910,7 @@ type G2PAssociation struct {
 func (m *G2PAssociation) Reset()                    { *m = G2PAssociation{} }
 func (m *G2PAssociation) String() string            { return proto.CompactTextString(m) }
 func (*G2PAssociation) ProtoMessage()               {}
-func (*G2PAssociation) Descriptor() ([]byte, []int) { return fileDescriptor3, []int{12} }
+func (*G2PAssociation) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{12} }
 
 func (m *G2PAssociation) GetId() string {
 	if m != nil {
@@ -993,9 +993,9 @@ func init() {
 	proto.RegisterEnum("bmeg.ResponseCurve_ResponseType", ResponseCurve_ResponseType_name, ResponseCurve_ResponseType_value)
 }
 
-func init() { proto.RegisterFile("bmeg/phenotype.proto", fileDescriptor3) }
+func init() { proto.RegisterFile("bmeg/phenotype.proto", fileDescriptor7) }
 
-var fileDescriptor3 = []byte{
+var fileDescriptor7 = []byte{
 	// 1571 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x8c, 0x57, 0xdd, 0x6e, 0x23, 0x49,
 	0x15, 0xc6, 0xff, 0xf6, 0xb1, 0xe3, 0x78, 0x2a, 0x3b, 0xa1, 0x89, 0xa2, 0xdd, 0x6c, 0x23, 0x56,
