@@ -1,5 +1,8 @@
 all: schemas
 
+PATH := ${PATH}:${GOPATH}/bin
+export PATH
+
 schemas:
 	go get github.com/golang/protobuf/protoc-gen-go
 	go get github.com/golang/protobuf/ptypes
@@ -16,5 +19,5 @@ schemas:
 	bmeg/phenotype.proto \
 	bmeg/genome.proto \
 	bmeg/variants.proto \
-	bmeg/vest.proto
-
+	bmeg/vest.proto \
+	bmeg/protein.proto

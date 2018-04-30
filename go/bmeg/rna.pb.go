@@ -13,6 +13,7 @@ It is generated from these files:
 	bmeg/genome.proto
 	bmeg/variants.proto
 	bmeg/vest.proto
+	bmeg/protein.proto
 
 It has these top-level messages:
 	GeneExpression
@@ -58,6 +59,7 @@ It has these top-level messages:
 	TranscriptEffect
 	VariantAnnotation
 	VestScore
+	Protein
 */
 package bmeg
 

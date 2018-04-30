@@ -1,0 +1,15 @@
+
+syntax = "proto3";
+
+package bmeg;
+
+message Protein {
+  string uniprot_id = 1;
+  string name = 2;
+  repeated string accession = 3;
+  string ensembl_gene = 4;
+  string ensembl_transcript = 5;
+  string ensembl_protein = 6;
+  repeated string pubmed = 7;
+  repeated string pdb = 8;
+}
