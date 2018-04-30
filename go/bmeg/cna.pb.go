@@ -23,7 +23,7 @@ type CNACallSet struct {
 func (m *CNACallSet) Reset()                    { *m = CNACallSet{} }
 func (m *CNACallSet) String() string            { return proto.CompactTextString(m) }
 func (*CNACallSet) ProtoMessage()               {}
-func (*CNACallSet) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{0} }
+func (*CNACallSet) Descriptor() ([]byte, []int) { return fileDescriptor1, []int{0} }
 
 func (m *CNACallSet) GetId() string {
 	if m != nil {
@@ -59,7 +59,7 @@ type CNASegment struct {
 func (m *CNASegment) Reset()                    { *m = CNASegment{} }
 func (m *CNASegment) String() string            { return proto.CompactTextString(m) }
 func (*CNASegment) ProtoMessage()               {}
-func (*CNASegment) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{1} }
+func (*CNASegment) Descriptor() ([]byte, []int) { return fileDescriptor1, []int{1} }
 
 func (m *CNASegment) GetReferenceName() string {
 	if m != nil {
@@ -115,9 +115,9 @@ func init() {
 	proto.RegisterType((*CNASegment)(nil), "bmeg.CNASegment")
 }
 
-func init() { proto.RegisterFile("bmeg/cna.proto", fileDescriptor2) }
+func init() { proto.RegisterFile("bmeg/cna.proto", fileDescriptor1) }
 
-var fileDescriptor2 = []byte{
+var fileDescriptor1 = []byte{
 	// 235 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x54, 0x90, 0x41, 0x4b, 0xc3, 0x30,
 	0x18, 0x86, 0x69, 0xb3, 0x55, 0xfa, 0x4d, 0x8b, 0x04, 0x91, 0x9c, 0xa4, 0x0e, 0x84, 0x9e, 0xf4,

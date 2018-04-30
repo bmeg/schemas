@@ -38,7 +38,7 @@ type VariantSetMetadata struct {
 func (m *VariantSetMetadata) Reset()                    { *m = VariantSetMetadata{} }
 func (m *VariantSetMetadata) String() string            { return proto.CompactTextString(m) }
 func (*VariantSetMetadata) ProtoMessage()               {}
-func (*VariantSetMetadata) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{0} }
+func (*VariantSetMetadata) Descriptor() ([]byte, []int) { return fileDescriptor9, []int{0} }
 
 func (m *VariantSetMetadata) GetKey() string {
 	if m != nil {
@@ -111,7 +111,7 @@ type VariantSet struct {
 func (m *VariantSet) Reset()                    { *m = VariantSet{} }
 func (m *VariantSet) String() string            { return proto.CompactTextString(m) }
 func (*VariantSet) ProtoMessage()               {}
-func (*VariantSet) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{1} }
+func (*VariantSet) Descriptor() ([]byte, []int) { return fileDescriptor9, []int{1} }
 
 func (m *VariantSet) GetId() string {
 	if m != nil {
@@ -171,7 +171,7 @@ type CallSet struct {
 func (m *CallSet) Reset()                    { *m = CallSet{} }
 func (m *CallSet) String() string            { return proto.CompactTextString(m) }
 func (*CallSet) ProtoMessage()               {}
-func (*CallSet) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{2} }
+func (*CallSet) Descriptor() ([]byte, []int) { return fileDescriptor9, []int{2} }
 
 func (m *CallSet) GetId() string {
 	if m != nil {
@@ -266,7 +266,7 @@ type Call struct {
 func (m *Call) Reset()                    { *m = Call{} }
 func (m *Call) String() string            { return proto.CompactTextString(m) }
 func (*Call) ProtoMessage()               {}
-func (*Call) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{3} }
+func (*Call) Descriptor() ([]byte, []int) { return fileDescriptor9, []int{3} }
 
 func (m *Call) GetCallSetName() string {
 	if m != nil {
@@ -397,7 +397,7 @@ type Variant struct {
 func (m *Variant) Reset()                    { *m = Variant{} }
 func (m *Variant) String() string            { return proto.CompactTextString(m) }
 func (*Variant) ProtoMessage()               {}
-func (*Variant) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{4} }
+func (*Variant) Descriptor() ([]byte, []int) { return fileDescriptor9, []int{4} }
 
 func (m *Variant) GetId() string {
 	if m != nil {
@@ -557,7 +557,7 @@ type TranscriptEffect struct {
 func (m *TranscriptEffect) Reset()                    { *m = TranscriptEffect{} }
 func (m *TranscriptEffect) String() string            { return proto.CompactTextString(m) }
 func (*TranscriptEffect) ProtoMessage()               {}
-func (*TranscriptEffect) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{5} }
+func (*TranscriptEffect) Descriptor() ([]byte, []int) { return fileDescriptor9, []int{5} }
 
 func (m *TranscriptEffect) GetId() string {
 	if m != nil {
@@ -606,7 +606,7 @@ type VariantAnnotation struct {
 func (m *VariantAnnotation) Reset()                    { *m = VariantAnnotation{} }
 func (m *VariantAnnotation) String() string            { return proto.CompactTextString(m) }
 func (*VariantAnnotation) ProtoMessage()               {}
-func (*VariantAnnotation) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{6} }
+func (*VariantAnnotation) Descriptor() ([]byte, []int) { return fileDescriptor9, []int{6} }
 
 func (m *VariantAnnotation) GetId() string {
 	if m != nil {
@@ -653,9 +653,9 @@ func init() {
 	proto.RegisterType((*VariantAnnotation)(nil), "bmeg.VariantAnnotation")
 }
 
-func init() { proto.RegisterFile("bmeg/variants.proto", fileDescriptor5) }
+func init() { proto.RegisterFile("bmeg/variants.proto", fileDescriptor9) }
 
-var fileDescriptor5 = []byte{
+var fileDescriptor9 = []byte{
 	// 842 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x8c, 0x55, 0xdb, 0x8a, 0x2b, 0x45,
 	0x14, 0xa5, 0xd3, 0xb9, 0xee, 0xcc, 0xe4, 0x52, 0x33, 0x86, 0x72, 0xe0, 0x48, 0x6c, 0xbc, 0x44,

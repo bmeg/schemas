@@ -44,7 +44,7 @@ type Position struct {
 func (m *Position) Reset()                    { *m = Position{} }
 func (m *Position) String() string            { return proto.CompactTextString(m) }
 func (*Position) ProtoMessage()               {}
-func (*Position) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{0} }
+func (*Position) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{0} }
 
 func (m *Position) GetId() string {
 	if m != nil {
@@ -115,7 +115,7 @@ type Gene struct {
 func (m *Gene) Reset()                    { *m = Gene{} }
 func (m *Gene) String() string            { return proto.CompactTextString(m) }
 func (*Gene) ProtoMessage()               {}
-func (*Gene) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{1} }
+func (*Gene) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{1} }
 
 func (m *Gene) GetId() string {
 	if m != nil {
@@ -199,7 +199,7 @@ type Exon struct {
 func (m *Exon) Reset()                    { *m = Exon{} }
 func (m *Exon) String() string            { return proto.CompactTextString(m) }
 func (*Exon) ProtoMessage()               {}
-func (*Exon) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{2} }
+func (*Exon) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{2} }
 
 func (m *Exon) GetId() string {
 	if m != nil {
@@ -256,7 +256,7 @@ type Transcript struct {
 func (m *Transcript) Reset()                    { *m = Transcript{} }
 func (m *Transcript) String() string            { return proto.CompactTextString(m) }
 func (*Transcript) ProtoMessage()               {}
-func (*Transcript) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{3} }
+func (*Transcript) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{3} }
 
 func (m *Transcript) GetId() string {
 	if m != nil {
@@ -321,7 +321,7 @@ type GeneSynonym struct {
 func (m *GeneSynonym) Reset()                    { *m = GeneSynonym{} }
 func (m *GeneSynonym) String() string            { return proto.CompactTextString(m) }
 func (*GeneSynonym) ProtoMessage()               {}
-func (*GeneSynonym) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{4} }
+func (*GeneSynonym) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{4} }
 
 func (m *GeneSynonym) GetId() string {
 	if m != nil {
@@ -375,7 +375,7 @@ type GeneDatabase struct {
 func (m *GeneDatabase) Reset()                    { *m = GeneDatabase{} }
 func (m *GeneDatabase) String() string            { return proto.CompactTextString(m) }
 func (*GeneDatabase) ProtoMessage()               {}
-func (*GeneDatabase) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{5} }
+func (*GeneDatabase) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{5} }
 
 func (m *GeneDatabase) GetId() string {
 	if m != nil {
@@ -416,7 +416,7 @@ type GeneFamily struct {
 func (m *GeneFamily) Reset()                    { *m = GeneFamily{} }
 func (m *GeneFamily) String() string            { return proto.CompactTextString(m) }
 func (*GeneFamily) ProtoMessage()               {}
-func (*GeneFamily) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{6} }
+func (*GeneFamily) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{6} }
 
 func (m *GeneFamily) GetId() string {
 	if m != nil {
@@ -463,9 +463,9 @@ func init() {
 	proto.RegisterType((*GeneFamily)(nil), "bmeg.GeneFamily")
 }
 
-func init() { proto.RegisterFile("bmeg/genome.proto", fileDescriptor4) }
+func init() { proto.RegisterFile("bmeg/genome.proto", fileDescriptor2) }
 
-var fileDescriptor4 = []byte{
+var fileDescriptor2 = []byte{
 	// 468 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xb4, 0x94, 0xcf, 0x8e, 0xd3, 0x30,
 	0x10, 0xc6, 0x95, 0x38, 0x09, 0x9b, 0x29, 0x42, 0xc5, 0x5a, 0xad, 0x2c, 0x84, 0x56, 0x51, 0x4e,
