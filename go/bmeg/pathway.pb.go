@@ -21,7 +21,7 @@ type ProteinInteraction struct {
 func (m *ProteinInteraction) Reset()                    { *m = ProteinInteraction{} }
 func (m *ProteinInteraction) String() string            { return proto.CompactTextString(m) }
 func (*ProteinInteraction) ProtoMessage()               {}
-func (*ProteinInteraction) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{0} }
+func (*ProteinInteraction) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{0} }
 
 func (m *ProteinInteraction) GetSrc() string {
 	if m != nil {
@@ -51,7 +51,7 @@ type Pathway struct {
 func (m *Pathway) Reset()                    { *m = Pathway{} }
 func (m *Pathway) String() string            { return proto.CompactTextString(m) }
 func (*Pathway) ProtoMessage()               {}
-func (*Pathway) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{1} }
+func (*Pathway) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{1} }
 
 func (m *Pathway) GetId() string {
 	if m != nil {
@@ -68,7 +68,7 @@ type ProteinInstance struct {
 func (m *ProteinInstance) Reset()                    { *m = ProteinInstance{} }
 func (m *ProteinInstance) String() string            { return proto.CompactTextString(m) }
 func (*ProteinInstance) ProtoMessage()               {}
-func (*ProteinInstance) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{2} }
+func (*ProteinInstance) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{2} }
 
 func (m *ProteinInstance) GetId() string {
 	if m != nil {
@@ -92,7 +92,7 @@ type Complex struct {
 func (m *Complex) Reset()                    { *m = Complex{} }
 func (m *Complex) String() string            { return proto.CompactTextString(m) }
 func (*Complex) ProtoMessage()               {}
-func (*Complex) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{3} }
+func (*Complex) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{3} }
 
 func (m *Complex) GetId() string {
 	if m != nil {
@@ -118,7 +118,7 @@ type Reaction struct {
 func (m *Reaction) Reset()                    { *m = Reaction{} }
 func (m *Reaction) String() string            { return proto.CompactTextString(m) }
 func (*Reaction) ProtoMessage()               {}
-func (*Reaction) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{4} }
+func (*Reaction) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{4} }
 
 func (m *Reaction) GetId() string {
 	if m != nil {
@@ -154,7 +154,7 @@ type Catalysis struct {
 func (m *Catalysis) Reset()                    { *m = Catalysis{} }
 func (m *Catalysis) String() string            { return proto.CompactTextString(m) }
 func (*Catalysis) ProtoMessage()               {}
-func (*Catalysis) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{5} }
+func (*Catalysis) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{5} }
 
 func init() {
 	proto.RegisterType((*ProteinInteraction)(nil), "bmeg.ProteinInteraction")
@@ -165,9 +165,9 @@ func init() {
 	proto.RegisterType((*Catalysis)(nil), "bmeg.Catalysis")
 }
 
-func init() { proto.RegisterFile("bmeg/pathway.proto", fileDescriptor5) }
+func init() { proto.RegisterFile("bmeg/pathway.proto", fileDescriptor6) }
 
-var fileDescriptor5 = []byte{
+var fileDescriptor6 = []byte{
 	// 235 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x64, 0x90, 0x31, 0x4f, 0xc3, 0x30,
 	0x10, 0x85, 0x55, 0x27, 0x22, 0xe4, 0x2a, 0x01, 0xba, 0xc9, 0x2c, 0x28, 0xf2, 0xd4, 0x09, 0x06,

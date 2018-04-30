@@ -10,6 +10,7 @@ It is generated from these files:
 	bmeg/genome.proto
 	bmeg/methylation.proto
 	bmeg/ml.proto
+	bmeg/nlp.proto
 	bmeg/pathway.proto
 	bmeg/phenotype.proto
 	bmeg/protein.proto
@@ -47,6 +48,7 @@ It has these top-level messages:
 	RandomForestData
 	LinearCoeffData
 	FeatureCoefficient
+	Pubmed
 	ProteinInteraction
 	Pathway
 	ProteinInstance

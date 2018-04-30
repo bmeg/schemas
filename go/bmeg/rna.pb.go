@@ -40,7 +40,7 @@ var ExpressionScale_value = map[string]int32{
 func (x ExpressionScale) String() string {
 	return proto.EnumName(ExpressionScale_name, int32(x))
 }
-func (ExpressionScale) EnumDescriptor() ([]byte, []int) { return fileDescriptor8, []int{0} }
+func (ExpressionScale) EnumDescriptor() ([]byte, []int) { return fileDescriptor9, []int{0} }
 
 type GeneExpression struct {
 	Id     string          `protobuf:"bytes,1,opt,name=id" json:"id,omitempty"`
@@ -56,7 +56,7 @@ type GeneExpression struct {
 func (m *GeneExpression) Reset()                    { *m = GeneExpression{} }
 func (m *GeneExpression) String() string            { return proto.CompactTextString(m) }
 func (*GeneExpression) ProtoMessage()               {}
-func (*GeneExpression) Descriptor() ([]byte, []int) { return fileDescriptor8, []int{0} }
+func (*GeneExpression) Descriptor() ([]byte, []int) { return fileDescriptor9, []int{0} }
 
 func (m *GeneExpression) GetId() string {
 	if m != nil {
@@ -117,7 +117,7 @@ type CohortMatrix struct {
 func (m *CohortMatrix) Reset()                    { *m = CohortMatrix{} }
 func (m *CohortMatrix) String() string            { return proto.CompactTextString(m) }
 func (*CohortMatrix) ProtoMessage()               {}
-func (*CohortMatrix) Descriptor() ([]byte, []int) { return fileDescriptor8, []int{1} }
+func (*CohortMatrix) Descriptor() ([]byte, []int) { return fileDescriptor9, []int{1} }
 
 func (m *CohortMatrix) GetId() string {
 	if m != nil {
@@ -156,7 +156,7 @@ type Keyspace struct {
 func (m *Keyspace) Reset()                    { *m = Keyspace{} }
 func (m *Keyspace) String() string            { return proto.CompactTextString(m) }
 func (*Keyspace) ProtoMessage()               {}
-func (*Keyspace) Descriptor() ([]byte, []int) { return fileDescriptor8, []int{2} }
+func (*Keyspace) Descriptor() ([]byte, []int) { return fileDescriptor9, []int{2} }
 
 func (m *Keyspace) GetId() string {
 	if m != nil {
@@ -188,7 +188,7 @@ type MatrixVectorEdge struct {
 func (m *MatrixVectorEdge) Reset()                    { *m = MatrixVectorEdge{} }
 func (m *MatrixVectorEdge) String() string            { return proto.CompactTextString(m) }
 func (*MatrixVectorEdge) ProtoMessage()               {}
-func (*MatrixVectorEdge) Descriptor() ([]byte, []int) { return fileDescriptor8, []int{3} }
+func (*MatrixVectorEdge) Descriptor() ([]byte, []int) { return fileDescriptor9, []int{3} }
 
 func (m *MatrixVectorEdge) GetIn() string {
 	if m != nil {
@@ -220,7 +220,7 @@ type MatrixAnalysis struct {
 func (m *MatrixAnalysis) Reset()                    { *m = MatrixAnalysis{} }
 func (m *MatrixAnalysis) String() string            { return proto.CompactTextString(m) }
 func (*MatrixAnalysis) ProtoMessage()               {}
-func (*MatrixAnalysis) Descriptor() ([]byte, []int) { return fileDescriptor8, []int{4} }
+func (*MatrixAnalysis) Descriptor() ([]byte, []int) { return fileDescriptor9, []int{4} }
 
 func (m *MatrixAnalysis) GetId() string {
 	if m != nil {
@@ -252,9 +252,9 @@ func init() {
 	proto.RegisterEnum("bmeg.ExpressionScale", ExpressionScale_name, ExpressionScale_value)
 }
 
-func init() { proto.RegisterFile("bmeg/rna.proto", fileDescriptor8) }
+func init() { proto.RegisterFile("bmeg/rna.proto", fileDescriptor9) }
 
-var fileDescriptor8 = []byte{
+var fileDescriptor9 = []byte{
 	// 447 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x6c, 0x53, 0x51, 0x6f, 0xd3, 0x30,
 	0x18, 0x24, 0x4e, 0xda, 0xae, 0x5f, 0xaa, 0x10, 0x59, 0x80, 0x2c, 0xc4, 0x43, 0x88, 0x84, 0x54,

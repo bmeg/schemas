@@ -28,7 +28,7 @@ type VestScore struct {
 func (m *VestScore) Reset()                    { *m = VestScore{} }
 func (m *VestScore) String() string            { return proto.CompactTextString(m) }
 func (*VestScore) ProtoMessage()               {}
-func (*VestScore) Descriptor() ([]byte, []int) { return fileDescriptor10, []int{0} }
+func (*VestScore) Descriptor() ([]byte, []int) { return fileDescriptor11, []int{0} }
 
 func (m *VestScore) GetAaMutation() string {
 	if m != nil {
@@ -108,7 +108,7 @@ type VestScore_Gene struct {
 func (m *VestScore_Gene) Reset()                    { *m = VestScore_Gene{} }
 func (m *VestScore_Gene) String() string            { return proto.CompactTextString(m) }
 func (*VestScore_Gene) ProtoMessage()               {}
-func (*VestScore_Gene) Descriptor() ([]byte, []int) { return fileDescriptor10, []int{0, 0} }
+func (*VestScore_Gene) Descriptor() ([]byte, []int) { return fileDescriptor11, []int{0, 0} }
 
 func (m *VestScore_Gene) GetId() string {
 	if m != nil {
@@ -129,9 +129,9 @@ func init() {
 	proto.RegisterType((*VestScore_Gene)(nil), "bmeg.VestScore.Gene")
 }
 
-func init() { proto.RegisterFile("bmeg/vest.proto", fileDescriptor10) }
+func init() { proto.RegisterFile("bmeg/vest.proto", fileDescriptor11) }
 
-var fileDescriptor10 = []byte{
+var fileDescriptor11 = []byte{
 	// 257 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x54, 0x90, 0xb1, 0x4e, 0xc3, 0x30,
 	0x10, 0x86, 0xe5, 0x24, 0x2d, 0xe4, 0x2a, 0x01, 0xb2, 0x3a, 0x58, 0x0c, 0x10, 0x31, 0x45, 0x0c,
