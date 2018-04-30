@@ -67,6 +67,7 @@ It has these top-level messages:
 	Phenotype
 	G2PAssociation
 	Protein
+	PFAMFamily
 	GeneExpression
 	CohortMatrix
 	Keyspace

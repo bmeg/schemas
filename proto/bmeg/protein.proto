@@ -13,3 +13,13 @@ message Protein {
   repeated string pubmed = 7;
   repeated string pdb = 8;
 }
+
+message PFAMFamily {
+  string id = 1;
+  string accession = 2;
+  string type = 3;
+  repeated string go_terms = 4;
+  repeated string clans = 5;
+  string description = 6;
+  string comments = 7;
+}
