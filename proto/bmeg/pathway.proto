@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+package bmeg;
+
+
+message ProteinInteraction {
+  string src = 1;
+  string dst = 2;
+  string interaction = 3;
+}
+
+message Pathway {
+  string id = 1;
+
+}
+
+
+message ProteinInstance {
+  string id = 1;
+  string protein = 2;
+}
+
+message Complex {
+  string id = 1;
+  repeated string components = 2;
+}
+
+message Reaction {
+  string id = 1;
+  string interaction = 2;
+  repeated string to = 3;
+  repeated string from = 4;
+}
+
+message Catalysis {
+
+}
