@@ -21,4 +21,5 @@ schemas:
 	bmeg/genome.proto \
 	bmeg/variants.proto \
 	bmeg/methylation.proto \
+	bmeg/vest.proto \
 	bmeg/protein.proto

@@ -21,7 +21,6 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_pb=_b('\n\x16\x62meg/methylation.proto\x12\x04\x62meg\"\xa1\x01\n\x10MethylationPanel\x12\n\n\x02id\x18\x01 \x01(\t\x12\x14\n\x0c\x62iosample_id\x18\x05 \x01(\t\x12\x39\n\nbeta_value\x18\x06 \x03(\x0b\x32%.bmeg.MethylationPanel.BetaValueEntry\x1a\x30\n\x0e\x42\x65taValueEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\x01:\x02\x38\x01\x62\x06proto3')
 )
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -39,14 +38,14 @@ _METHYLATIONPANEL_BETAVALUEENTRY = _descriptor.Descriptor(
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='value', full_name='bmeg.MethylationPanel.BetaValueEntry.value', index=1,
       number=2, type=1, cpp_type=5, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -76,21 +75,21 @@ _METHYLATIONPANEL = _descriptor.Descriptor(
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='biosample_id', full_name='bmeg.MethylationPanel.biosample_id', index=1,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='beta_value', full_name='bmeg.MethylationPanel.beta_value', index=2,
       number=6, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -110,6 +109,7 @@ _METHYLATIONPANEL = _descriptor.Descriptor(
 _METHYLATIONPANEL_BETAVALUEENTRY.containing_type = _METHYLATIONPANEL
 _METHYLATIONPANEL.fields_by_name['beta_value'].message_type = _METHYLATIONPANEL_BETAVALUEENTRY
 DESCRIPTOR.message_types_by_name['MethylationPanel'] = _METHYLATIONPANEL
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 MethylationPanel = _reflection.GeneratedProtocolMessageType('MethylationPanel', (_message.Message,), dict(
 

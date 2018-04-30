@@ -12,6 +12,7 @@ It is generated from these files:
 	bmeg/genome.proto
 	bmeg/variants.proto
 	bmeg/methylation.proto
+	bmeg/vest.proto
 	bmeg/protein.proto
 
 It has these top-level messages:
@@ -58,6 +59,7 @@ It has these top-level messages:
 	TranscriptEffect
 	VariantAnnotation
 	MethylationPanel
+	VestScore
 	Protein
 */
 package bmeg
