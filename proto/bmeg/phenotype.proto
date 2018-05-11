@@ -92,7 +92,7 @@ message Compound {
 
   string smiles = 10;
   repeated string assays = 11;
-  repeated string source = 12;
+  string source = 12;
   repeated string sids = 13;
 
   string chebi_id = 14;
